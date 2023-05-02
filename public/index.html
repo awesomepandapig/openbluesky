@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Open Bluesky</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="outer">
+        <div class="middle">
+            <div id="centered-div">
+                <div id="card1">
+                    <h2 style="font-weight: 900;">Open Bluesky</h2>
+                    
+                    
+                    
+                    <!--<input id="domain" type="url" placeholder="https://your-domain.com">
+                    <h4>Create your own Bluesky server</h4>
+                    <label for="invites" style="display: inline-block;
+                    padding-right: 10px;
+                    white-space: nowrap;">Require Invites:</label>
+                    <input id="invites" type="checkbox" style="width: fit-content; width: 16px;
+                    height: 16px; vertical-align: -2px;">
+                    <br><br>-->
+
+                    <h4>/xrpc/com.atproto.server.describeServer</h4>
+                    <div class="code-container">
+                        <code>
+                            {&nbsp;
+                                <br>&nbsp;"availableUserDomains":[".bsky.social"],
+                                <br>&nbsp;"inviteCodeRequired":true,
+                                <br>&nbsp;"links": {
+                                    <br>&nbsp;&nbsp;"privacyPolicy":"https://bsky.app/support/privacy",
+                                    <br>&nbsp;&nbsp;"terms&nbsp;OfService":"https://bsky.app/support/tos"
+                                <br>&nbsp;}
+                            <br>}
+                        </code>
+                    </div>
+
+                    <button>Create your server</button>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

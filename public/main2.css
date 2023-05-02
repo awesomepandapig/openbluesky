@@ -1,0 +1,227 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+  /* Add fonts from the app's server 
+    @font-face {                
+      font-family: 'FontName';
+      src: url('FontName.woff2') format('woff2');
+    } 
+    ...or hosted services like Google Fonts 
+    */@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@900&family=Inter&display=swap');/*
+  */
+  
+  /* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+        /* npm install modern-normalize
+          Resets elements for browser consistency.  
+          https://www.npmjs.com/package/modern-normalize
+        */         
+  
+  /* Component-specific stylesheets, if any. 
+    @import "component1.css";   
+  */
+
+/*   ----- Variables  -----  */
+:root {
+    --blue: #3B82F6;
+    --light:#fff;
+    --dark: #000;
+  }
+  
+  /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+  body {       /* Can alternatively define in html {} or :root {} */
+    font-family: 'Inter', sans-serif; /* Define with at least one font name and its related generic family name.*/
+    background-color: white;
+  }
+  
+  /*  ----- Page layout blocks -----  */
+  header {}
+  main {}
+  section {
+    color: var(--dark);
+    font-family: inherit; /* Define with at least one font name and its related generic family name.*/
+    margin-left: calc(100% - 75vh);
+    margin-right: calc(100% - 75vh);
+    margin-top: calc((100% - 75vh) / 4);
+    border: 0.5px solid #F0E9E9;
+    border-radius: .375rem;
+    padding: 32px;
+    padding-top: 0px;
+    background-color: white}
+    article {}
+      #topic1 {}
+      #topic2 {}
+  div {}
+  aside {}
+  footer {}
+  
+  /* ----- Anchors ----- Text links */
+  a {}
+  a:link {}
+  a:hover {}
+  a:active {}
+  a:visited {}
+  
+  /*  ----- Navigation ----- Override text links for navigation only.  */
+  nav {}
+  nav a {}
+  nav a:hover {}
+  
+  /*  -----  Typography  ----- */
+  p {}
+  br {}
+  ol, ul, dl {}
+  li {}
+  dt {}
+  dd {}
+  
+  h1, h2, h3, h4, h5, h6 {font-weight: 900;} 
+  h1 {}
+  h2 {}
+  h3 {}
+  h4 {}
+  h5 {}
+  h6 {}
+  
+  abbr {}
+  acronym {}
+  address {}
+  blockquote {}
+    q {}
+    cite {}
+  em {}
+  hr {}
+  mark {}
+  s {}
+  span {}
+  strong {}
+  sub {}
+  sup {}
+  time {}
+  
+  /*  ----- Coding or instructional typography ----- */
+  pre {}
+  code {}
+  kbd {}
+  samp {}
+  var {}
+  del {} 
+  ins {}
+  
+  /*  ----- Table ----- */
+  table {}
+  caption {}
+  thead {}
+  tbody {}
+  tfoot {}
+  tr {}
+    tr:nth-child(even) {}
+  th {}
+  td {}
+    td:nth-child(1) {}
+  colgroup {}
+  data {}
+  datalist {}
+  
+  
+  /*  ----- Form ----- */
+  form {}
+  fieldset {}
+    legend {}
+  label {}
+    button {
+        border: 0 solid #e5e7eb;
+        font-family: inherit;
+        text-transform: none;
+        cursor: pointer;
+        -webkit-appearance: button;
+        border-radius: .375rem;
+        background-color: rgb(37 99 235);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-weight: 500;
+        color: rgb(255 255 255);
+        width: fit-content; min-width: 120px;
+      }
+    button:active {
+      transform: scale(0.95);
+    }
+    input {    
+        background-color: rgba(0, 0, 0, 0);
+        border: 0.5px solid #F0E9E9;
+        box-sizing: border-box;
+        font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        margin: 0px;
+        resize: none;
+        flex: 1 1 0%;
+        border-radius: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        font-size: 17px;
+        font-weight: 400;
+        letter-spacing: 0.25px;
+        --placeholderTextColor: #545664;
+        color: rgb(0, 0, 0);
+        margin-bottom: 16px;}
+      input:focus {}
+      input::placeholder {}
+    output {}
+    meter {}
+    progress {}
+    select {}
+      optgroup {}
+      option {}
+    textarea {}
+  
+  /* ----- Media ----- */
+  figure {}
+    figcaption {}
+    figure img {}
+  svg {}
+  picture {}
+    source {}
+  iframe {}
+  video {}
+  audio {}
+  embed {}
+  object {}
+  
+  /*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+  .gallery {}
+  
+  .floatright {}
+  .floatleft {}
+  .center-middle {}
+  
+  .ten {}
+  .twenty {}
+  .thirty {}
+  .forty {}
+  .fifty {}
+  .sixty {}
+  .seventy {}
+  .eighty {}
+  
+  .radius {}
+  .circle {}
+  .boxshadow {}
+  .tshadow {} 
+  .gradient {}
+  .shape {}
+  
+  @keyframes App-logo {}
+  
+  /*   ===== TABLET  media query overrides mobile styles ===== */
+  @media all and (min-width: 600px) {}
+  
+  /*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+  @media all and (min-width: 1080px) {}
+  
+  /*   ===== PRINT  media query overrides previous styles =====  */
+  @media print {}

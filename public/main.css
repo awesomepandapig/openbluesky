@@ -1,0 +1,183 @@
+body {
+    margin: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: #0052fe;
+}
+
+#title {
+    color:rgb(255, 255, 255);
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: white;
+    width: fit-content;
+    font-size: 32px;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0052fe;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#centered-div {
+    background-color: white;
+    width: 60ch;
+    padding: 16px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#card1 {
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+.code-container {
+    background-color: #151718;
+    padding: 16px;
+    border-radius: .375rem;
+    margin-bottom: 16px;
+    overflow-wrap: break-word;
+}
+
+code {
+    width: 100%;
+    background-color: #151718;
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+#data {
+    background-color: black;
+    padding: 16px;
+    border-radius: 8px;
+    line-height: 16px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#loading {
+    color: white;
+    padding: 16px;
+    margin-top: auto;
+    margin-bottom: -56px;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+#price {
+    margin-top: 16px;
+    font-size: 46px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+#costDifference {
+    color: white;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+}
+
+#percentageChange {
+    color: white;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    margin-left: 16px;
+}
+
+button {
+    border: 0 solid #e5e7eb;
+    font-family: inherit;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+    border-radius: .375rem;
+    background-color: rgb(37 99 235);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-weight: 500;
+    color: rgb(255 255 255);
+    width: fit-content; min-width: 120px;
+  }
+
+  input {    
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.5px solid #F0E9E9;
+    box-sizing: border-box;
+    font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0px;
+    resize: none;
+    flex: 1 1 0%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.25px;
+    --placeholderTextColor: #545664;
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px;}
+
+@media only screen and (max-width: 700px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    #centered-div {
+      margin-left: 16px;
+      width: fit-content;
+      margin-right: 16px;
+      flex-direction: column;
+    }
+
+    #card2 {
+        margin-left: 0;
+        background-color: white;
+    }
+
+    #data {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #data p {
+        margin-top: 8px;
+        font-size: 24px;
+    }
+
+    #loading {
+        margin-top: -8px;
+    }
+
+    #costDifference {
+        font-size: 24px;
+    }
+    #percentageChange {
+        font-size: 24px;
+    }
+}
